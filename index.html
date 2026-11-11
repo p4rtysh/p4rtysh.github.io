@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>p4rty · portfólio</title>
+<meta name="description" content="Portfólio de p4rty: desenvolvedora back-end Java, segurança da informação e programação competitiva.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">p4rty.dev</a>
+    <a href="#sobre">sobre</a><a href="#skills">skills</a><a href="#projetos">projetos</a><a href="#comp. programming">comp. programming</a><a href="#freela">freelas</a><a href="#contato">contato</a>
+    <button id="theme" type="button" aria-label="Alternar tema claro e escuro">☾/☀</button>
+    <button id="sfx" type="button" aria-pressed="true" aria-label="Ligar ou desligar os sons">♪ on</button>
+  </div>
+</nav>
+
+<main class="wrap" id="top">
+  <header class="hero">
+    <div>
+      <h1>oi, eu sou a p4rty<span class="cursor" aria-hidden="true"></span></h1>
+      <p>Desenvolvedora back-end em Java, curiosa de segurança da informação e maratonista de programação competitiva.</p>
+      <div class="btns">
+        <a class="btn" href="#projetos">ver projetos</a>
+        <a class="btn alt" href="#contato">falar comigo</a>
+      </div>
+    </div>
+    <div class="sprite px" aria-hidden="true">
+      <svg id="cat" viewBox="0 0 14 10"></svg>
+      <small>player 1 online</small>
+    </div>
+  </header>
+
+  <section id="sobre">
+    <h2>sobre</h2>
+    <div class="card px">
+      <p>Estudante de Engenharia de Software com foco em back-end Java e em cibersegurança. Fui estagiária de engenharia de software em 2025 e hoje sou Tech Lead e Manager na startup da minha faculdade.</p>
+      <p>Fora do código: programação competitiva, aquarela e livros.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>skills</h2>
+    <div class="grid">
+      <div class="card px">
+        <h3>linguagens</h3>
+        <p><span class="tag">Java</span> Back-end com Spring Boot, Spring Data JPA, JPA/Hibernate, REST APIs e Maven, aplicando POO e SOLID. Em preparação para a certificação Oracle OCP.</p>
+        <p><span class="tag">Python</span> Dashboards com dados em tempo real, automação de análise de logs, varredura de vulnerabilidades e embarcados com ESP32.</p>
+        <p><span class="tag">C</span> Programação de embarcados com ESP32 para visão computacional.</p>
+        <p><span class="tag">JS / TS</span> Front-end com React, JavaScript e TypeScript.</p>
+      </div>
+      <div class="card px">
+        <h3>ferramentas</h3>
+        <span class="tag">IntelliJ IDEA</span><span class="tag">Docker</span><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">Linux</span><span class="tag">Git</span><span class="tag">AWS</span><span class="tag">Scrum</span>
+        <p>Uso Git, Docker e IntelliJ IDEA no dia a dia, modelo e mantenho bancos SQL e MySQL, tenho experiência com AWS e trabalho em equipes Scrum e Kanban.</p>
+      </div>
+      <div class="card px">
+        <h3>segurança</h3>
+        <span class="tag">Linux internals</span><span class="tag">Windows internals</span><span class="tag">LGPD</span>
+        <p>Estudo o funcionamento interno de Linux e Windows, escrevo scripts em Python para varredura de vulnerabilidades e análise de logs e apliquei políticas de LGPD no ambiente do Metaverso da faculdade, como DPO acadêmica.</p>
+      </div>
+      <div class="card px">
+        <h3>liderança e idiomas</h3>
+        <p>Product Owner no Desafio GC, em parceria com a RBS. DPO na Startup Academy da Uniceplac, Tech Lead e Manager na startup da faculdade e Gerente de Infraestrutura de Redes no projeto LUE de e-sports.</p>
+        <p>Inglês fluente, espanhol intermediário e francês básico.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <h2>projetos</h2>
+    <div class="grid">
+      <article class="card px">
+        <h3>ToolKit</h3>
+        <p>Kit de ferramentas que desenvolvo para estudos de segurança.</p>
+        <span class="tag">Python</span><br>
+        <a href="https://github.com/p4rtysh/ToolKit">ver no GitHub</a>
+      </article>
+      <article class="card px">
+        <h3>Discord Updater for Linux</h3>
+        <p>Script Bash que atualiza o Discord a partir do pacote .deb.</p>
+        <span class="tag">Shell</span><br>
+        <a href="https://github.com/p4rtysh/Discord-Updater-For-Linux">ver no GitHub</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="cp">
+    <h2>programação competitiva</h2>
+    <div class="card px">
+      <p>Resolvo problemas de algoritmos e estruturas de dados por diversão e treino.</p>
+      <a href="https://codeforces.com/profile/p4rty">perfil no Codeforces</a>
+    </div>
+  </section>
+
+  <section id="freela">
+    <h2>freelas</h2>
+    <div class="card px">
+      <p>Desenvolvimento sob demanda: APIs e sistemas back-end, automações em Python e outras demandas de software.</p>
+      <a class="btn alt" href="#contato">pedir orçamento</a>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>contato</h2>
+    <div class="card px">
+      <div class="btns">
+        <a class="btn" href="https://github.com/p4rtysh">GitHub</a>
+        <a class="btn alt" href="https://www.linkedin.com/in/patricia-ferreiraz/">LinkedIn</a>
+        <a class="btn" href="https://codeforces.com/profile/p4rty">Codeforces</a>
+        <a class="btn alt" href="https://www.instagram.com/p4rtysh/">Instagram</a>
+      </div>
+      <p class="todo">// TODO: adicionar e-mail</p>
+    </div>
+  </section>
+</main>
+
+<footer>feito com pixels e café · © 2026 p4rty</footer>
+
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

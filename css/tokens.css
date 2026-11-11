@@ -1,0 +1,21 @@
+/* Cores, tema claro/escuro e safe-areas */
+:root{
+  --bg:#f1e9ff; --panel:#ffffff; --ink:#241a3d; --muted:#5b4d80;
+  --pink:#d6336c; --teal:#0b8f86; --sun:#b7791f; --line:#241a3d;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#1d1535; --panel:#2c2150; --ink:#f4ecff; --muted:#b8a9e0;
+    --pink:#ff8fab; --teal:#5eead4; --sun:#ffd166; --line:#f4ecff;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#1d1535; --panel:#2c2150; --ink:#f4ecff; --muted:#b8a9e0;
+  --pink:#ff8fab; --teal:#5eead4; --sun:#ffd166; --line:#f4ecff;
+  color-scheme:dark;
+}
